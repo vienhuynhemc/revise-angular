@@ -1,1 +1,7 @@
-<p>content works!</p>
+<div *ngFor="let product of products">
+  <h3>{{product.name}}</h3>
+  <ng-template [ngIf]="product.description">
+    <p>{{product.description}}</p>
+  </ng-template>
+  <button (click)="share(product)">Share</button>
+</div>
