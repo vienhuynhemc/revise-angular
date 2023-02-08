@@ -29,4 +29,7 @@ export class DetailComponent {
     this.location.back();
   }
 
+  updateHero(): void {
+    this.heroService.updateHero(this.hero);
+  }
 }

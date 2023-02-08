@@ -2,6 +2,6 @@
 <p>id {{hero.id}}</p>
 <div>
   <span>Hero name:</span>
-  <input [value]="hero.name"/>
+  <input [(ngModel)]="hero.name" (ngModelChange)="updateHero()"/>
 </div>
 <button (click)="back()">Back</button>

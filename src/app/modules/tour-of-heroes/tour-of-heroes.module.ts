@@ -6,6 +6,7 @@ import { HerosComponent } from './pages/heros/heros.component';
 import { DetailComponent } from './pages/detail/detail.component';
 import {RouterLink, RouterOutlet} from "@angular/router";
 import {TourOfHeroesRoutingModule} from "./tour-of-heroes-routing.module";
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -19,11 +20,12 @@ import {TourOfHeroesRoutingModule} from "./tour-of-heroes-routing.module";
     exports: [
         HomeComponent
     ],
-    imports: [
-        TourOfHeroesRoutingModule,
-        CommonModule,
-        RouterOutlet,
-        RouterLink
-    ]
+  imports: [
+    TourOfHeroesRoutingModule,
+    CommonModule,
+    RouterOutlet,
+    RouterLink,
+    FormsModule
+  ]
 })
 export class TourOfHeroesModule { }
