@@ -5,6 +5,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {FormsModule} from "@angular/forms";
 import {MyStoreModule} from "./modules/my-store/my-store.module";
+import {TourOfHeroesModule} from "./modules/tour-of-heroes/tour-of-heroes.module";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {MyStoreModule} from "./modules/my-store/my-store.module";
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    MyStoreModule
+    MyStoreModule,
+    TourOfHeroesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
