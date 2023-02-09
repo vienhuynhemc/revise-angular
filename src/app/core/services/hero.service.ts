@@ -31,6 +31,9 @@ export class HeroService {
   }
 
   public getHeroes(): Observable<Hero[]> {
+    setTimeout(() => {
+      console.log("a")
+    }, 1000);
     return of(this.heroes);
   }
 
